@@ -5,8 +5,26 @@
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
     <link href="{% static 'blog/css/styles.css' %}" rel="stylesheet">
+<!--    <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css">-->
 </head>
 <body>
+<div class="main-header">
+  <div class="header">
+    <img src="{% static 'blog/img/logo-horizontal.png' %}">
+      <div class="menu-translate">
+        <div>PT</div>
+        <div></div>
+        <div>EN</div>
+      </div>
+  </div>
+  <div class="menu">
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+</div>
+
+
   <div class="container">
      {% block content %}
       {% endblock %}
