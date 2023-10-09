@@ -2,6 +2,7 @@
 @import url('https://use.typekit.net/qpj2ebe.css');
 
 :root {
+    font-size: 62,5%;
     --principal: #ff5c35;
     --black: #1e1e1e;
     --font-title-anisette: 'anisette-std', sans-serif; /* font-weight:600 or 700; font-style:normal */
@@ -30,7 +31,9 @@ body {
 }
 
 .header img {
-    width: 300px;
+
+    width: 60vw;
+
 }
 
 .menu div {
@@ -52,7 +55,7 @@ body {
     font-style: normal;
     width: 22px;
     text-align: left;
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 
 .menu-translate div:nth-child(even) {
