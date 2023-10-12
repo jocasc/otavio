@@ -1,14 +1,69 @@
 {% extends "blog/base.html" %}
+{% load static %}
 
 {% block title %}My Blog{% endblock %}
 {% block content %}
-<h1>ANISETTE STD EXBOLD</h1>
-<h1>anisette std exbold</h1>
-{% for post in posts %}
-    <h2>
-        <a href="{% url 'blog:post_detail' post.id %}">
-        {{ post.title }}
-        </a>
-    </h2>
-{% endfor %}
+
+
+<img src="{%static 'blog/img/small-logo.png' %}" style="width:6rem; height: auto; position:fixed;z-index:2;"  alt="logo peri criativity" id="loguinho">
+
+<div class="top-container">
+    <h1>Muita calma</h1>
+    <p>Essa mensagem é uma gambis, ela vai sair daqui</p>
+  </div>
+
+
+<div class="header" id="myHeader">
+    <img src="{% static 'blog/img/logo-horizontal.png' %}"  alt="logo peri criativity" id="logo">
+    <div class="container__menu-hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+  </div>
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn closed" id="closebtn">X</a>
+    <div class="overlay-content">
+      <a href="#">SOBRE</a>
+      <a href="#">VISUAL</a>
+      <a href="#">TEXTUAL</a>
+      <a href="#">AGENDA</a>
+      <a href="#">FAÇA PARTE</a>
+    </div>
+</div>
+
+<article class="article responsive" id="article">
+    <img src="{% static 'blog/img/first-image.png' %}" alt="artist drawing on the wall">
+    <div class="article__text-post">
+        <h2>TÍTULO</h2>
+        <h3>Autoria</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sapiente,
+            placeat doloribus corrupti eaque itaque. Soluta ipsa totam corporis modi,
+            fugit ad, suscipit, sunt necessitatibus accusamus dolor beatae nulla esse
+            quod quibusdam. Hic vel ullam voluptatibus, quaerat, iusto doloremque
+            asperiores voluptatum dolorem nostrum sunt accusantium deserunt, nihil iste
+            nulla eos. Possimus magnam ipsum perferendis consequuntur molestiae,
+            vero voluptatum nostrum harum!
+        </p>
+    </div>
+    <img src="{% static 'blog/img/second-image.png' %}" alt="artist drawing on the wall">
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?si=vuFurWk8NMp14Pfx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+    <div class="article__text-post">
+      <h2>TÍTULO</h2>
+      <h3>Autoria</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sapiente,
+          placeat doloribus corrupti eaque itaque. Soluta ipsa totam corporis modi,
+          fugit ad, suscipit, sunt necessitatibus accusamus dolor beatae nulla esse
+          quod quibusdam. Hic vel ullam voluptatibus, quaerat, iusto doloremque
+          asperiores voluptatum dolorem nostrum sunt accusantium deserunt, nihil iste
+          nulla eos. Possimus magnam ipsum perferendis consequuntur molestiae,
+          vero voluptatum nostrum harum!
+      </p>
+    </div>
+</article>
+<hr>
+<p class="footer">Rodapé, Logos + Redes Sociais.</p>
+
+
 {% endblock %}

@@ -3,31 +3,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/article.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/menu.css' %}">
+
     <link href="{% static 'blog/css/styles.css' %}" rel="stylesheet">
-<!--    <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css">-->
+    <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css">
 </head>
 <body>
-<div class="main-header">
-  <div class="header">
-    <img src="{% static 'blog/img/logo-horizontal.png' %}">
-      <div class="menu-translate">
-        <div>PT</div>
-        <div></div>
-        <div>EN</div>
-      </div>
-  </div>
-  <div class="menu">
-      <div></div>
-      <div></div>
-      <div></div>
-  </div>
-</div>
-
-
-  <div class="container">
+  <div>
      {% block content %}
       {% endblock %}
   </div>
+<script src="{% static 'blog/js/script.js' %}"></script>
 </body>
 </html>

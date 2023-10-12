@@ -1,0 +1,128 @@
+
+.top-container {
+    /* background-color: #f1f1f1; */
+    background-color: #ff5c35;;
+    padding: 20px;
+    text-align: center;
+  }
+/* Style the header */
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 16px;
+    /* background: #555; */
+    background-color: #ff5c35;;
+    color: #f1f1f1;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  }
+
+  .header img {
+    width: 100%;
+  }
+
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    /* top: -108px; */
+    top: -110px;
+    width: 93.5%;
+    z-index: 1;
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  /* .sticky + .content {
+    padding-top: 102px;
+  } */
+
+
+/* .header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+} */
+
+
+
+/* .sticky {
+
+    position: fixed;
+    top: -130px;
+    width: 90%;
+    z-index: 1;
+    background-color: brown;
+} */
+
+/* .sticky + .content {
+    padding-top: 102px;
+} */
+
+
+
+.newColor {
+    /* background-color: white; */
+    z-index: 1;
+    /* width: 50%; */
+    /* top:0; */
+
+
+}
+
+/* .header__logo-translate {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 30px;
+}
+
+.header__logo-translate img {
+    width: 60vw;
+}
+
+
+.header__menu-translate{
+    font-family: var(--font-title-anisette);
+    font-weight: 600;
+    font-style: normal;
+    width: 2rem;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.header__menu-translate div:nth-child(even) {
+    width: 2rem;
+    height: 2px;
+    background-color: var(--black);
+
+}
+ */
+
+
+.container__menu-hamburger div {
+    width: 30px;
+    margin: 4px 0;
+    border: 2px solid var(--black);
+    border-radius: 5px;
+}
+
+.container__menu-hamburger {
+    align-self: flex-end;
+    margin-top: 20px;
+    padding-right: 8px;
+}
+
+
+/* .header img {
+    width: 100%;
+} */
+
+.lista-menu {
+    display: none;
+}
+
