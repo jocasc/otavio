@@ -18,23 +18,24 @@ closeBtn.addEventListener('click', (e) => {
     document.body.style.overflow = "auto";
 })
 
-loguinho.style.display = 'none'
+//loguinho.style.display = 'none'
 // article.style.marginTop = '25px'
 loguinho.style.display = 'none'
 var sticky = header.offsetTop
 window.addEventListener('scroll', () => {
     if(window.scrollY > (sticky + 110)){
-        header.classList.add('sticky')  
-        article.style.marginTop = '225px'              
+        header.classList.add('sticky')
+        article.style.marginTop = '225px'
         logo.style.visibility = 'hidden'
         loguinho.style.display = 'block'
+        loguinho.style.marginLeft = '15px'
      } else {
          header.classList.remove('sticky')
          article.style.marginTop = '25px'
          logo.style.visibility = 'visible'
          loguinho.style.display = 'none'
      }
- 
+
 })
 
 
